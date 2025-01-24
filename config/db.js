@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect("2")
+        await mongoose.connect("mongodb://localhost:27017/express","add your own db connection string here")
         
         console.log('MongoDB connected');
     } catch (error) {
